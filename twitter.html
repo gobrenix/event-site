@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Description of you Event">
+    <meta name="keywords" content="Event,Feed,Live,Tour">
+    <meta name="author" content="Host of Event">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>#TWITTERTAG</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <main class="application">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">#TWITTERTAG</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</span></a></li>
+                        <li class="active"><a href="#prevent">Twitter Feed <span class="sr-only">(current)</a></li>
+                        <li><a href="lineup.html">Lineup</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Event</a></li>
+                <li class="active">Twitter Feed</li>
+            </ul>
+        </div>
+        <a class="twitter-timeline"
+           href="https://twitter.com/hashtag/ogwprom"
+           data-widget-id="600548205709893632"
+           data-chrome="nofooter noheader noscrollbar transparent">
+        </a>
+       <script>
+           !function(d,s,id) {
+               var js, fjs = d.getElementsByTagName(s)[0],
+               p = /^http:/.test(d.location) ? 'http' : 'https';
+               if(!d.getElementById(id)) {
+                   js = d.createElement(s);
+                   js.id = id;
+                   js.src = p+"://platform.twitter.com/widgets.js";
+                   fjs.parentNode.insertBefore(js,fjs);
+               }
+           }(document,"script","twitter-wjs");
+       </script>
+    </main>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
